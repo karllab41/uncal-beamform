@@ -34,3 +34,7 @@ Note that these are *not* the signals heard at the microphone. Those will be the
 beamform.py <input-prefix> <speaker-id>
 ```
 The speaker-id is an integer specifying which speaker you would like to hear. For example, in the above set of recordings, where the prefix is `recording`, if I'd like to hear a speaker at recording 3, the <speaker-id> would then be `3`.
+
+For example, here is an example of what will work out of the box:
+
+beamform.py wavs/labmates/recording- 16
