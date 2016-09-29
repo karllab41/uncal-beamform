@@ -37,4 +37,6 @@ The speaker-id is an integer specifying which speaker you would like to hear. Fo
 
 For example, here is an example of what will work out of the box:
 
+```
 beamform.py wavs/labmates/recording- 16
+```
