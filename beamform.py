@@ -97,3 +97,8 @@ beamformed = beamform( sumsigs, speakerid, delmatrix )
 scikits.audiolab.play(sumsigs[2], fs=rate)
 scikits.audiolab.play(beamformed, fs=rate)
 # scikits.audiolab.play(recvall, fs=rate)
+
+# For processing purposes
+# import scipy.io
+# scipy.io.wavfile.write('singlemic.wav', rate, sumsigs[2])
+# scipy.io.wavfile.write('beamformed.wav', rate, beamformed)

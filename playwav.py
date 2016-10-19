@@ -10,5 +10,7 @@ if not len(sys.argv)==2:
 
 # Read the wav files
 (rate,sig) = wav.read(sys.argv[1])
-sig =sig[:,0].astype(np.float64)/sig[:,0].max()
+if len(sig.shape)==2:
+    sig =sig[:,0].astype(np.float64)/sig[:,0].max()
+
 scikits.audiolab.play(sig, fs=rate)
